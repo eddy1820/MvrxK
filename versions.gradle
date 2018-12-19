@@ -1,0 +1,93 @@
+ext {
+  versions = [
+      compileSdk     : 28,
+      minSdk         : 19,
+      targetSdk      : 28,
+      gradleBuildTool: '3.2.1',
+      kotlin         : '1.2.71',
+      googleServices : '3.1.1',
+      supportLibrary : '28.0.0',
+      dagger         : '2.16',
+      okhttp         : '3.10.0',
+      jackson        : '2.9.2',
+      retrofit2      : '2.4.0',
+      rxJava2        : '2.2.4',
+      epoxy          : '2.19.0',
+      paging         : '1.0.1',
+      mvrx           : '0.6.0',
+      koin           : '1.0.2'
+
+  ]
+  depends = [
+      kotlin     : [
+          stdlib : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+          reflect: "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+      ],
+
+      //==================== Support Library ====================
+      support    : [
+          v4            : "com.android.support:support-v4:$versions.supportLibrary",
+          appcompat     : "com.android.support:appcompat-v7:$versions.supportLibrary",
+          design        : "com.android.support:design:$versions.supportLibrary",
+          cardview      : "com.android.support:cardview-v7:$versions.supportLibrary",
+          constraint    : "com.android.support.constraint:constraint-layout:1.1.3",
+          multidex      : "com.android.support:multidex:1.0.2",
+          preference    : "com.android.support:preference-v7:$versions.supportLibrary",
+          preferenceV14 : "com.android.support:preference-v14:$versions.supportLibrary",
+          recyclerViewV7: "com.android.support:recyclerview-v7:$versions.supportLibrary",
+      ],
+
+      //==================== Structure ====================
+      rxjava2    : [
+          core   : "io.reactivex.rxjava2:rxjava:$versions.rxJava2",
+          android: "io.reactivex.rxjava2:rxandroid:2.0.1"
+      ],
+      dagger     : [
+          core            : "com.google.dagger:dagger:$versions.dagger",
+          compiler        : "com.google.dagger:dagger-compiler:$versions.dagger",
+          android         : "com.google.dagger:dagger-android:$versions.dagger",
+          androidSupport  : "com.google.dagger:dagger-android-support:$versions.dagger",
+          androidProcessor: "com.google.dagger:dagger-android-processor:$versions.dagger",
+      ],
+      okhttp     : [
+          "com.squareup.okhttp3:okhttp:$versions.okhttp",
+          "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
+      ],
+      retrofit2  : [
+          "com.squareup.retrofit2:retrofit:$versions.retrofit2",
+          "com.squareup.retrofit2:converter-jackson:$versions.retrofit2",
+          "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit2"
+      ],
+      mvrx       : "com.airbnb.android:mvrx:$versions.mvrx"
+      ,
+      epoxy      : [
+          core    : "com.airbnb.android:epoxy:$versions.epoxy",
+          paging  : "com.airbnb.android:epoxy-paging:$versions.epoxy",
+          compiler: "com.airbnb.android:epoxy-processor:$versions.epoxy",
+      ],
+
+      paging     : [
+          "android.arch.paging:runtime:$versions.paging",
+          "android.arch.paging:rxjava2:$versions.paging"
+      ],
+      jackson    : [
+          "com.fasterxml.jackson.core:jackson-databind:$versions.jackson",
+          "com.fasterxml.jackson.core:jackson-core:$versions.jackson",
+          "com.fasterxml.jackson.core:jackson-annotations:$versions.jackson",
+          "com.fasterxml.jackson.module:jackson-module-kotlin:$versions.jackson"
+      ],
+      koin : [
+          "org.koin:koin-core:0.9.3",
+          "org.koin:koin-android-architecture:0.9.3",
+          "org.koin:koin-core-ext:1.0.2",
+          "org.koin:koin-android:1.0.2",
+          "org.koin:koin-android-scope:1.0.2",
+          "org.koin:koin-android-viewmodel:1.0.2"
+      ],
+
+      //==================== Test ====================
+      junit      : "junit:junit:4.12",
+      supportTest: ["com.android.support.test:runner:1.0.2",
+                    "com.android.support.test.espresso:espresso-core:3.0.2"]
+  ]
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MvrxK</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="trading_pair_id">Trading pair id :</string>
+    <string name="last_trade_price">Last trade price :</string>
+    <string name="highest_big">Highest big :</string>
+    <string name="lowest_ask">Lowest ask :</string>
+    <string name="timestamp">Timestamp :</string>
+    <string name="fail_page">404</string>
+    <string name="c">C</string>
+
+</resources>
